@@ -27,12 +27,6 @@ namespace Kreta.Desktop.ViewModels.OtherData
 
         public async override Task InitializeAsync()
         {
-            if (_addressService is not null)
-            {
-                List<Address> fromBackend= await _addressService.SelectAllAddressAsync();
-                Addresses = new ObservableCollection<Address>(fromBackend);
-            }
-            await base.InitializeAsync();
         }
     }
 }

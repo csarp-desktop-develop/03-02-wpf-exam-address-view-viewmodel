@@ -25,8 +25,6 @@ namespace Kreta.Desktop.ViewModels.OtherData
         [RelayCommand]
         private async Task ShowAddressView()
         {
-            await _addressViewModel.InitializeAsync();
-            CurrentChildView = _addressViewModel;
         }
     }
 }
